@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border: 3px;
+    padding:20px;
+    font-family: 'Special Elite', cursive;
+}
+
+.button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.image {
+    height: 200px;
+    
+}
+
+h3{
+    font-size: xx-large;
+}
