@@ -12,6 +12,9 @@
         <h:form>
             <h3>  <h:outputText value="#{guessNumberBean.response}"/> </h3>
             <p> <h:commandButton value="Guess again!" action="index" class="button"/></p>
+            <p><h:commandButton id="RestartButton" value="NewGame"
+                                        action="#{guessNumberBean.reset()}"
+                                        immediate="true" class="button reset-button"/></p>
         </h:form>
     </h:body>
 </html>

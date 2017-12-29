@@ -9,7 +9,7 @@ import java.util.Random;
 @SessionScoped
 public class GuessNumberBean implements Serializable {
 
-    final int RANDOMNUMBER;
+    private int RANDOMNUMBER;
     private int max = 10;
     private int min = 1;
     private int userGuess;
@@ -30,6 +30,13 @@ public class GuessNumberBean implements Serializable {
             return "Too high!";
 
         }
+    }
+    
+    public String reset(){
+        this.userGuess = 0;
+        Random random = new Random();
+        RANDOMNUMBER = random.nextInt(max) + 1;
+        return "index";
     }
 
     public String getImage() {
